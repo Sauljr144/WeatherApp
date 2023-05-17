@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Start of Side Bar -->
+        <div class="col-4 d-flex justify-content-center mt-4">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="search"
+                  placeholder="&#xf002; search"
+                />
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-center">
+                  <img id="currentImg" src="images/Sunny.png" alt="" style="height: 300px" />
+                </div>
+                <div class="row">
+                  <div class="col d-flex justify-content-center">
+                    <h3 class="text-center" id="place">Stockton</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex justify-content-center">
+                    <h1 class="text-center" id="currentTemp">70°F</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex justify-content-center">
+                    <h2 class="text-center me-5" id="day">Monday</h2>
+                    <h2 class="text-center ms-5" id="time">12:00 PM</h2>
+                  </div>
+                </div>
+                <div class="row mt-5">
+                  <div class="col d-flex justify-content-center">
+                    <h2 class="text-center" style="text-decoration: underline">
+                      Favorites
+                    </h2>
+                  </div>
+                </div>
+                <div class="row mt-2 justify-content-center">
+                  <div class="col" id="injectArea">
+                    <p class="text-center">Stockton</p>
+                    <p class="text-center">Lodi</p>
+                    <p class="text-center">Pleasanton</p>
+                  </div>
+                </div>
+                <div class="row mb-5 pb-5">
+                  <div class="col d-flex justify-content-center">
+                    <button
+                      id="clearBtn"
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      style="
+                        --bs-btn-padding-x: 2rem;
+                        --bs-btn-padding-y: 0.2rem;
+                        --bs-btn-hover-bg: black;
+                        --bs-btn-hover-border-color: black;
+                      "
+                    >
+                      Clear
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Side Bar -->
+
+        <!-- Start of Week and Today's Highlights -->
+        <div class="col-8 mybg">
+          <div class="container">
+            <!-- Start of Week Section -->
+            <div class="row">
+              <div class="col mt-5 pt-5 pb-5">
+                <h2 class="text-center">Week</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col d-flex justify-content-center ms-4">
+                <!-- smBox1 -->
+                <div class="div smBox me-5">
+                  <h3 class="text-center mt-4">Mon</h3>
+                  <div class="col d-flex justify-content-center">
+                    <img id="monImg"
+                      src="images/Sunny Rain.png"
+                      style="height: 75px"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="text-center mt-4" id="monTemp">70°F</h3>
+                </div>
+                <!-- end smBox1 -->
+
+                <!-- smBox2 -->
+                <div class="div smBox me-5">
+                  <h3 class="text-center mt-4">Tue</h3>
+                  <div class="col d-flex justify-content-center">
+                    <img id="tueImg"
+                      src="images/Sunny Rain.png"
+                      style="height: 75px"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="text-center mt-4" id="tueTemp">70°F</h3>
+                </div>
+                <!-- end smBox2 -->
+
+                <!-- smBox3 -->
+                <div class="div smBox me-5">
+                  <h3 class="text-center mt-4">Wed</h3>
+                  <div class="col d-flex justify-content-center">
+                    <img id="wedImg"
+                      src="images/Sunny Rain.png"
+                      style="height: 75px"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="text-center mt-4" id="wedTemp">70°F</h3>
+                </div>
+                <!-- end smBox3 -->
+
+                <!-- smBox4 -->
+                <div class="div smBox me-5">
+                  <h3 class="text-center mt-4">Thu</h3>
+                  <div class="col d-flex justify-content-center">
+                    <img id="thuImg"
+                      src="images/Sunny Rain.png"
+                      style="height: 75px"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="text-center mt-4" id="thuTemp">70°F</h3>
+                </div>
+                <!-- end smBox4 -->
+
+                <!-- smBox5 -->
+                <div class="div smBox">
+                  <h3 class="text-center mt-4">Fri</h3>
+                  <div class="col d-flex justify-content-center">
+                    <img id="friImg"
+                      src="images/Sunny Rain.png"
+                      style="height: 75px"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="text-center mt-4" id="friTemp">70°F</h3>
+                </div>
+                <!-- end smBox5 -->
+              </div>
+            </div>
+            <!-- End of Week Section -->
+
+            <!-- Start of Today's Highlights Section -->
+
+              <div class="row mt-5">
+                <div class="col d-flex justify-content-center">
+                  <h2 class="mb-4 mt-2">Today's Highlights</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-center ms-4">
+
+                  <!-- xlBox1 -->
+                  <div class="xlBox me-5">
+                    <h3 class="text-center mt-4 pt-3">Max</h3>
+                    <h1 class="text-center" id="maxTemp">70°F</h1>
+                  </div>
+                  <!-- end xlBox1 -->
+
+                  <!-- xlBox2 -->
+                  <div class="xlBox me-5">
+                    <h3 class="text-center mt-4 pt-3">Min</h3>
+                    <h1 class="text-center" id="minTemp">60°F</h1>
+                  </div>
+                  <!-- end xlBox2 -->
+
+                  <!-- xlBox3 -->
+                  <div class="xlBox">
+                    <h3 class="text-center mt-4 pt-3">UV Index</h3>
+                    <h1 class="text-center" id="uvIndex">7</h1>
+                  </div>
+                  <!-- end xlBox3 -->
+                  
+                </div>
+              </div>
+              <div class="row mt-5 mb-5">
+                <div class="col d-flex justify-content-center ms-4">
+
+                  <!-- xlBox4 -->
+                  <div class="xlBox me-5">
+                    <h3 class="text-center mt-4 pt-3">Wind Status</h3>
+                    <h1 class="text-center" id="windStatus">6</h1>
+                    <h3 class="text-center">m/hr</h3>
+                  </div>
+                  <!-- end xlBox4 -->
+
+                  <!-- xlBox5 -->
+                  <div class="xlBox me-5">
+                    <h3 class="text-center mt-4 pt-3">Humidity</h3>
+                    <h1 class="text-center" id="humidity">12%</h1>
+                  </div>
+                  <!-- end xlBox5 -->
+
+                  <!-- xlBox6 -->
+                  <div class="xlBox">
+                    <h3 class="text-center mt-4 pt-3">Air Quality</h3>
+                    <h1 class="text-center" id="airQuality">105</h1>
+                  </div>
+                  <!-- end xlBox6 -->
+                  
+                </div>
+              </div>
+
+            <!-- End of Today's Highlights Section -->
+
+          </div>
+        </div>
+        <!-- End of Week and Today's Highlights -->
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+      integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d9ac576693.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>

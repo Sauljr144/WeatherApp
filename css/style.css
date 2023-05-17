@@ -1,0 +1,61 @@
+body{
+    font-family: 'Roboto', sans-serif, FontAwesome;
+}
+
+
+.mybg{
+    background-color: #EDEDED;
+}
+
+
+/* Fonts for the  H's */
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.25rem;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+/* Clear */
+.btn{
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    border-width: 3px;
+    border-radius: 12px;
+    border-color: black;
+}
+
+/* search */
+.form-control{
+    border-color: #EDEDED;
+    border-width: 3px;
+    border-radius: 15px;
+}
+
+/* Small Boxes */
+.smBox{
+    height: 200px;
+    width: 150px;
+    background-color: white;
+    border-radius: 14px;
+}
+
+/* Big Boxes */
+
+.xlBox{
+    height: 200px;
+    width: 286px;
+    background-color: white;
+    border-radius: 14px;
+}
+
